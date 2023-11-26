@@ -1,16 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:hoyobox/page/home.dart';
+import 'package:hoyobox/page/genshin/characters.dart';
+import 'package:hoyobox/page/genshin/home.dart';
 
 import 'package:flutter_gen/gen_l10n/hoyobox_localizations.dart';
 
 class HoYoBoxContainer extends StatefulWidget {
-  const HoYoBoxContainer({super.key});
+
+  HoYoBoxContainer({super.key});
+
+  var state = _HoYoBoxGIHomePageState();
 
   @override
-  State<HoYoBoxContainer> createState() => _HoYoBoxContainerState();
+  State<HoYoBoxContainer> createState() => _HoYoBoxGIHomePageState();
+
 }
 
-class _HoYoBoxContainerState extends State<HoYoBoxContainer> {
+class _HoYoBoxGIHomePageState extends State<HoYoBoxContainer> {
+
+  var character = false;
 
   @override
   Widget build(BuildContext context) {
@@ -30,6 +37,9 @@ class _HoYoBoxContainerState extends State<HoYoBoxContainer> {
           ),
           leading: const Icon(Icons.favorite),
           onTap: () {
+            setState(() {
+              character = false;
+            });
             Navigator.pop(context);
           },
         ),
@@ -39,6 +49,9 @@ class _HoYoBoxContainerState extends State<HoYoBoxContainer> {
           ),
           leading: const Icon(Icons.comment),
           onTap: () {
+            setState(() {
+              character = true;
+            });
             Navigator.pop(context);
           },
         ),
@@ -49,7 +62,7 @@ class _HoYoBoxContainerState extends State<HoYoBoxContainer> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(localiztion.hoyobox_name),
       ),
-      body: HoYoBoxHomePage(),
+      body: character ? const HoYoBoxGICharacterPage() : const HoYoBoxGIHomePage(),
       drawer: Drawer(
         child: drawerItems,
       ),

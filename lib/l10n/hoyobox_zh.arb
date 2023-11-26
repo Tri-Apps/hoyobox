@@ -1,5 +1,6 @@
 {
   "hoyobox_name": "哈游盒子",
   "hoyobox_drawer_home": "主页",
-  "hoyobox_drawer_gacha": "抽卡分析"
+  "hoyobox_drawer_gacha": "抽卡分析",
+  "hoyobox_genshin_characters_cannotfetchcharacters": "获取角色列表失败"
 }

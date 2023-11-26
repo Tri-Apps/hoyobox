@@ -1,5 +1,6 @@
 {
   "hoyobox_name": "HoYoBox",
   "hoyobox_drawer_home": "Home",
-  "hoyobox_drawer_gacha": "Gacha Analysis"
+  "hoyobox_drawer_gacha": "Gacha Analysis",
+  "hoyobox_genshin_characters_cannotfetchcharacters": "Failed to fetch characters list"
 }

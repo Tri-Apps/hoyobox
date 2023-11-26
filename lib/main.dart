@@ -19,7 +19,7 @@ class HoYoBoxApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HoYoBoxContainer(),
+      home: HoYoBoxContainer(),
     );
   }
 }

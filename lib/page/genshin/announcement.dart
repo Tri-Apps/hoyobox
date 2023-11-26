@@ -1,7 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class HoYoBoxAnnouncementPage extends StatelessWidget {
+class HoYoBoxGIAnnouncementPage extends StatelessWidget {
+
+  const HoYoBoxGIAnnouncementPage({super.key});
 
   _listAnnouncement() async {
     // TODO
@@ -13,7 +14,7 @@ class HoYoBoxAnnouncementPage extends StatelessWidget {
         future: _listAnnouncement(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            return Center(
+            return const Center(
               child: Column(
                 children: [
 
@@ -27,7 +28,5 @@ class HoYoBoxAnnouncementPage extends StatelessWidget {
         }
     );
   }
-
-
 
 }

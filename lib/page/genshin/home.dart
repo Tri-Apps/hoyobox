@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
-class HoYoBoxHomePage extends StatelessWidget {
+class HoYoBoxGIHomePage extends StatelessWidget {
+  
+  const HoYoBoxGIHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
