@@ -1,7 +1,6 @@
 import 'package:hoyobox/game/game.dart';
 
 class Hi3Game extends Game {
-
   late String _displayName;
     
   @override
@@ -13,5 +12,4 @@ class Hi3Game extends Game {
   Hi3Game(String displayName) {
     _displayName = displayName;
   }
-
 }
