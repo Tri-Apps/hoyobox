@@ -1,0 +1,3 @@
+enum AccountType {
+  miyoushe, hoyoverse
+}

@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:hoyobox/app.dart';
 import 'package:hoyobox/page/container.dart';
 import 'package:flutter_gen/gen_l10n/hoyobox_localizations.dart';
 
 void main() {
-  runApp(const HoYoBoxApp());
+  BoxApp.init();
+  runApp(const AppEntryWidget());
 }
 
-class HoYoBoxApp extends StatelessWidget {
-  const HoYoBoxApp({super.key});
+class AppEntryWidget extends StatelessWidget {
+  const AppEntryWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
