@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:flutter/foundation.dart';
 import 'package:hoyobox/managers/account_manager.dart';
 
 class BoxApp {
@@ -21,7 +22,7 @@ class BoxApp {
   }
 
   BoxApp() {
-    platformName = Platform.operatingSystem;
+    platformName = kIsWeb ? "web" : Platform.operatingSystem;
     accountManager = AccountManager();
   }
 }
