@@ -4,6 +4,7 @@ import 'package:hoyobox/page/container.dart';
 import 'package:flutter_gen/gen_l10n/hoyobox_localizations.dart';
 
 void main() {
+  // Initialize the app before showing the user interface.
   BoxApp.init();
   runApp(const AppEntryWidget());
 }
